@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script>
+      var num=alert("please hover on kodnest calculator once you enter in and pls do some calculation part as well")
+    
+  </script>
+    <title>CALCULATOR</title>
+    <link rel="stylesheet" href="calculator.css">
+</head>
+<body>
+
+   
+      <center>
+<div id="container">
+    <a id="a" > KODNEST CALCULATOR</a>
+    <input type="text" id="disp">
+    <br><br>
+    <button onclick="equals()" id="button">=</button>
+     <button onclick="display('*')" id="button">*</button>
+     <button onclick="display('-')" id="button">-</button>
+     <button onclick="display('/')" id="button">/</button>
+     <button onclick="CE()" id="button1">CE</button><br>
+
+     <button onclick="display(7)"id="button">7</button>
+     <button onclick="display(8)"id="button">8</button>
+     <button onclick="display(9)"id="button">9</button><br>
+
+     <button onclick="display(4)"id="button">4</button>
+     <button onclick="display(5)"id="button">5</button>
+     <button onclick="display(6)"id="button">6</button><br>
+
+     <button onclick="display(1)"id="button">1</button>
+     <button onclick="display(2)"id="button">2</button>
+     <button onclick="display(3)"id="button">3</button><br>
+
+     <button onclick="display(0)"id="button">0</button>
+     <button onclick="display('.')"id="button">.</button>
+     <button onclick="display('+')"id="button">+</button>
+</div>
+       </center>
+
+    </form>
+</body>
+
+<script>
+function display(i){
+//  console.log(typeof(i))
+    document.getElementById("disp").value= document.getElementById("disp").value+i
+   
+}
+function CE(){
+
+    document.getElementById("disp").value=""
+   
+}
+
+function equals()
+{
+    var num=prompt("please enter Passward to check your answer")
+      if(num==9999)
+      {
+        var data=document.getElementById("disp").value
+        var result=eval(data)
+        document.getElementById("disp").value=result
+     }
+     else{
+         alert("passward missmatch")
+     }
+
+}
+</script>
+
+</html>

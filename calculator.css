@@ -1,0 +1,44 @@
+ #container {
+     background-image:linear-gradient(#7aebe6 10%,#dce9ed 41%,#00ffa6 100%);
+     border:1px double green;
+     width:20%;
+     height:360px;
+     border-radius:5%;
+    
+}
+
+
+
+#disp{
+    margin-top:10px;
+    width:90%;
+    font-size:x-large;
+    height:70px;
+    
+}
+
+#button{
+    width:20%;
+    height:36px;
+    font-size:x-large;
+   border-radius:36%;
+   background-color:#f0dde5;
+}
+
+#button1{
+    width:45%;
+    height:36px;
+    font-size:x-large;
+   border-radius:96%;
+   background-color:#f0dde5;
+}
+
+
+a:hover{
+    color:blue;
+    font-size: x-large;
+    font-style: italic;
+    text-decoration: underline;
+
+}
+
